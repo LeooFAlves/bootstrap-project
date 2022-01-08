@@ -17,17 +17,30 @@ textarea {
 }
 
 .card {
-  width: 32%;
+  width: 26.37rem;
   float: left;
   margin: 5px;
 }
 
-@media (min-width: 500px) {
+.label {
+  margin-top: 1rem;
+}
+
+.invalid-feedback {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 500px) {
+  #sobre h2 {
+    margin-top: 1rem;
+  }
+  
   #sobre img {
     margin-top: 2rem;
   }
 
   .card {
-    width: 25rem;
+    width: 18rem;
   }
 }
+

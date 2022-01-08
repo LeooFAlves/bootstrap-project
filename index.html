@@ -12,9 +12,9 @@
   <body>
 
   <header id="header">
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
       <div class="container">
-        <a href="#header" class="navbar-brand mb-0 h1">
+        <a href="#header" class="navbar-brand mb-0">
           <img class="d-inline-block align-top" src="./images/7581550_face id_confirmation_identification_security_scanning_icon.svg" width="30" height="30">
         Celulares Everywhere
         </a>
@@ -42,7 +42,7 @@
   <section id="sobre">
     <div class="container">
       <div class="row">
-        <div class="col-md-7 col-sm-12">
+        <div class="col-12 col-md-7 col-sm-12">
           <h2>Sobre Nós</h2>
           <p>
             Somos uma revenderora de celulares! Temos todos os tipos de smartphones que você pode pensar. Aqui você encontra o celular perfeito para todas as ocasiões, seja para o uso profissional, ou apenas no seu dia a dia. Você pode ter o celular certo, para a ocasião certa!
@@ -66,7 +66,7 @@
             <img src="./images/pexels-thiago-japyassu-4071887.jpg" alt="Tecnologia" class="img-fluid">
             <div class="card-body">
               <h5 class="card-title">Apple iPhone 13 Pro</h5>
-              <p class="card-text">Um celular completo, com uma ótima câmera.</p>
+              <p class="card-text">Um celular completo, com uma ótima câmera e um design único.</p>
               <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
             </div>
           </div>
@@ -74,7 +74,7 @@
             <img src="./images/s21.jfif" alt="Tecnologia" class="img-fluid">
             <div class="card-body">
               <h5 class="card-title">Samsung Galaxy S21 Ultra</h5>
-              <p class="card-text">Celular ultra potente, com uma câmera poderosa.</p>
+              <p class="card-text">Celular ultra potente, com uma câmera poderosa e uma bateria para o dia todo.</p>
               <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Ver produto</a>
             </div>
           </div>
@@ -82,7 +82,7 @@
             <img src="./images/pexels-zana-latif-4593994.jpg" alt="Tecnologia" class="img-fluid">
             <div class="card-body">
               <h5 class="card-title">Xiaomi Redmi K40</h5>
-              <p class="card-text">Um celular robusto, completo para o seu dia a dia.</p>
+              <p class="card-text">Um celular robusto, completo para o seu dia a dia, com ele você pode fazer tudo.</p>
               <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
             </div>
           </div>
@@ -98,21 +98,58 @@
           <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação.</p>
         </div>
         <div class="col-md-6 col-sm-12">
-          <form class="form">
-            <div class="input-group">
-              <input class="form-control" type="text" name="nome" placeholder="Digite seu nome">
-            </div>
-            <div class="input-group">
-              <input class="form-control" type="text" name="email" placeholder="Digite seu e-mail">
-            </div>
-            <div class="input-group">
-              <textarea class="form-control" name="" rows="5"></textarea>
-            </div>
-            <button type="submit" class="btn btn-lg btn-success">Solicitar cotação</button>
-          </form>
+          <form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-12 col-sm-12">
+      <label class="label" for="validationCustom01">Primeiro nome:</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="Nome" required>
+      <div class="invalid-feedback">
+        Por favor, preencha o campo!
+      </div>
+    </div>
+    <div class="col-md-12 col-sm-12">
+      <label for="validationCustom02">Sobrenome:</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Sobrenome" required>
+      <div class="invalid-feedback">
+        Por favor, preencha o campo!
+      </div>
+    </div>
+    <div class="col-md-12 col-sm-12">
+      <label for="validationCustomUsername">E-mail:</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+        </div>
+        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Digite seu e-mail" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Por favor, preencha o campo!
         </div>
       </div>
     </div>
+  </div>
+  
+  <button class="btn btn-primary" type="submit">Enviar</button>
+</form>
+
+<script>
+// Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
+    var forms = document.getElementsByClassName('needs-validation');
+    // Faz um loop neles e evita o envio
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
   </section>
 
 
