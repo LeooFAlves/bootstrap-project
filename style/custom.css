@@ -1,0 +1,33 @@
+header {
+  margin-bottom: 3rem;
+}
+
+section {
+  padding-bottom: 4rem;
+  padding-bottom: 4rem;
+}
+
+#sobre {
+  margin-top: 5rem;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+}
+
+.card {
+  width: 32%;
+  float: left;
+  margin: 5px;
+}
+
+@media (min-width: 500px) {
+  #sobre img {
+    margin-top: 2rem;
+  }
+
+  .card {
+    width: 25rem;
+  }
+}

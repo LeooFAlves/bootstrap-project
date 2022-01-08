@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--BOOTSTRAP CSS-->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./style/custom.css">
+    <title>Celulares Everywhere!</title>
+  </head>
+  <body>
+
+  <header id="header">
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+      <div class="container">
+        <a href="#header" class="navbar-brand mb-0 h1">
+          <img class="d-inline-block align-top" src="./images/7581550_face id_confirmation_identification_security_scanning_icon.svg" width="30" height="30">
+        Celulares Everywhere
+        </a>
+      <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a href="#header" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#sobre" class="nav-link">Sobre</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#produtos" class="nav-link">Produtos</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#contato" class="nav-link">Contato</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="sobre">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-sm-12">
+          <h2>Sobre Nós</h2>
+          <p>
+            Somos uma revenderora de celulares! Temos todos os tipos de smartphones que você pode pensar. Aqui você encontra o celular perfeito para todas as ocasiões, seja para o uso profissional, ou apenas no seu dia a dia. Você pode ter o celular certo, para a ocasião certa!
+          </p>
+          <p>Desde o último Iphone, até o mais recente Samsung ou Xiomi, nós temos o celular certo para você! Trabalhamos com produtos originais, todos chegam lacrados para você em qualquer lugar do Brasil, com garantia de 12 meses! Conheça mais dos nossos produtos!</p>
+          <a class="btn btn-lg btn-success" href="#produtos">Conheça nossos produtos!</a>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <img src="./images/pexels-yan-krukov-7792749.jpg" alt="Homem falando ao celular" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="produtos">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-2">
+          <h2>Produtos</h2>
+          <div class="card">
+            <img src="./images/pexels-thiago-japyassu-4071887.jpg" alt="Tecnologia" class="img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Apple iPhone 13 Pro</h5>
+              <p class="card-text">Um celular completo, com uma ótima câmera.</p>
+              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/s21.jfif" alt="Tecnologia" class="img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Samsung Galaxy S21 Ultra</h5>
+              <p class="card-text">Celular ultra potente, com uma câmera poderosa.</p>
+              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Ver produto</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/pexels-zana-latif-4593994.jpg" alt="Tecnologia" class="img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Xiaomi Redmi K40</h5>
+              <p class="card-text">Um celular robusto, completo para o seu dia a dia.</p>
+              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <h2>Contato</h2>
+          <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação.</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <form class="form">
+            <div class="input-group">
+              <input class="form-control" type="text" name="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="input-group">
+              <input class="form-control" type="text" name="email" placeholder="Digite seu e-mail">
+            </div>
+            <div class="input-group">
+              <textarea class="form-control" name="" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg btn-success">Solicitar cotação</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="modal fade" id="modal-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">          
+          <h5 class="modal-tile">Apple iPhone 13 Pro</h5>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>Confira a capacidade de armazenamento e os preços!</h6>
+          <table class="table table-hover table-striped">
+            <thead>
+              <tr>
+              <th>Capacidade</th>
+              <th>Preço</th>
+          </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td>128gb</td>
+            <td>R$ 9.000,00</td>
+          </tr>
+          <tr>
+            <td>256gb</td>
+            <td>R$ 10.000,00</td>
+          </tr>
+          <tr>
+            <td>512gb</td>
+            <td>R$ 11.000,00</td>
+          </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">          
+          <h5 class="modal-tile">Samsung Galaxy S21 Ultra</h5>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>Confira a capacidade de armazenamento e os preços!</h6>
+          <table class="table table-hover table-striped">
+            <thead>
+              <tr>
+              <th>Capacidade</th>
+              <th>Preço</th>
+          </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td>128gb</td>
+            <td>R$ 9.000,00</td>
+          </tr>
+          <tr>
+            <td>256gb</td>
+            <td>R$ 10.000,00</td>
+          </tr>
+          <tr>
+            <td>512gb</td>
+            <td>R$ 11.000,00</td>
+          </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-3">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">          
+          <h5 class="modal-tile">Xiaomi Redmi K40</h5>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>Confira o tamanho e os preços!</h6>
+          <table class="table table-hover table-striped">
+            <thead>
+              <tr>
+              <th>Capacidade</th>
+              <th>Preço</th>
+          </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td>128gb</td>
+            <td>R$ 9.000,00</td>
+          </tr>
+          <tr>
+            <td>256gb</td>
+            <td>R$ 10.000,00</td>
+          </tr>
+          <tr>
+            <td>512gb</td>
+            <td>R$ 11.000,00</td>
+          </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+    <!--BOOTSTRAP BUNDLE-->
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
