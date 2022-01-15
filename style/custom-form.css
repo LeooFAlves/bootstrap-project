@@ -1,0 +1,28 @@
+input {
+  margin-bottom: 1rem;
+}
+
+textarea.form-control,
+input.form-control,
+label.form-control {
+  width: 100% !important;
+  display: block;
+}
+
+h2 {
+  margin-top: 3rem;
+}
+
+.label {
+  margin-top: 1rem;
+}
+
+.form-check {
+  margin-top: 1rem;
+  margin-left: -1rem;
+}
+
+form button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

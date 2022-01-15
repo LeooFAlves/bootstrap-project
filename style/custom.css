@@ -2,18 +2,8 @@ header {
   margin-bottom: 3rem;
 }
 
-section {
-  padding-bottom: 4rem;
-  padding-bottom: 4rem;
-}
-
 #sobre {
   margin-top: 5rem;
-}
-
-input,
-textarea {
-  margin-bottom: 1rem;
 }
 
 .card {
@@ -22,15 +12,50 @@ textarea {
   margin: 5px;
 }
 
+.accordion {
+  margin-top: 2rem;
+}
+
+#flush-collapseThree,
+.accordion-item {
+  border-bottom: 1px solid black;
+}
+
+#cadastro a {
+  margin-top: 2rem;
+  margin-left: -0.2rem;
+}
+
+input {
+  margin-bottom: 1rem;
+}
+
+textarea.form-control,
+input.form-control,
+label.form-control {
+  width: 100% !important;
+  display: block;
+}
+
+h2 {
+  margin-top: 3rem;
+}
+
 .label {
   margin-top: 1rem;
 }
 
-.invalid-feedback {
+.form-check {
+  margin-top: 1rem;
+  margin-left: -1rem;
+}
+
+form button {
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 500px) {  
   #sobre h2 {
     margin-top: 1rem;
   }

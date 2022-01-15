@@ -1,281 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--BOOTSTRAP CSS-->
-    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="./style/custom.css">
-    <title>Celulares Everywhere!</title>
-  </head>
-  <body>
-
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--BOOTSTRAP CSS-->
+  <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <!--STYLES-->
+  <link rel="stylesheet" href="./style/custom.css">
+  <!--TITLE-->
+  <title>Celulares Everywhere!</title>
+</head>
+<body>
+  
+  <!--MENU-->
   <header id="header">
     <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
       <div class="container">
         <a href="#header" class="navbar-brand mb-0">
           <img class="d-inline-block align-top" src="./images/7581550_face id_confirmation_identification_security_scanning_icon.svg" width="30" height="30">
-        Celulares Everywhere
+          Celulares Everywhere
         </a>
-      <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a href="#header" class="nav-link active">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a href="#sobre" class="nav-link">Sobre</a>
-          </li>
-          <li class="nav-item active">
-            <a href="#produtos" class="nav-link">Produtos</a>
-          </li>
-          <li class="nav-item active">
-            <a href="#contato" class="nav-link">Contato</a>
-          </li>
-        </ul>
-      </div>
+        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a href="#header" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#sobre" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#produtos" class="nav-link">Produtos</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#cadastro" class="nav-link">Cadastro</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
-
-  <section id="sobre">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-7 col-sm-12">
-          <h2>Sobre Nós</h2>
-          <p>
-            Somos uma revenderora de celulares! Temos todos os tipos de smartphones que você pode pensar. Aqui você encontra o celular perfeito para todas as ocasiões, seja para o uso profissional, ou apenas no seu dia a dia. Você pode ter o celular certo, para a ocasião certa!
-          </p>
-          <p>Desde o último Iphone, até o mais recente Samsung ou Xiomi, nós temos o celular certo para você! Trabalhamos com produtos originais, todos chegam lacrados para você em qualquer lugar do Brasil, com garantia de 12 meses! Conheça mais dos nossos produtos!</p>
-          <a class="btn btn-lg btn-success" href="#produtos">Conheça nossos produtos!</a>
-        </div>
-        <div class="col-md-5 col-sm-12">
-          <img src="./images/pexels-yan-krukov-7792749.jpg" alt="Homem falando ao celular" class="img-fluid">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="produtos">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-2">
-          <h2>Produtos</h2>
-          <div class="card">
-            <img src="./images/pexels-thiago-japyassu-4071887.jpg" alt="Tecnologia" class="img-fluid">
-            <div class="card-body">
-              <h5 class="card-title">Apple iPhone 13 Pro</h5>
-              <p class="card-text">Um celular completo, com uma ótima câmera e um design único.</p>
-              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./images/s21.jfif" alt="Tecnologia" class="img-fluid">
-            <div class="card-body">
-              <h5 class="card-title">Samsung Galaxy S21 Ultra</h5>
-              <p class="card-text">Celular ultra potente, com uma câmera poderosa e uma bateria para o dia todo.</p>
-              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Ver produto</a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./images/pexels-zana-latif-4593994.jpg" alt="Tecnologia" class="img-fluid">
-            <div class="card-body">
-              <h5 class="card-title">Xiaomi Redmi K40</h5>
-              <p class="card-text">Um celular robusto, completo para o seu dia a dia, com ele você pode fazer tudo.</p>
-              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
-            </div>
-          </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contato">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-sm-12">
-          <h2>Contato</h2>
-          <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação.</p>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <form class="needs-validation" novalidate>
-  <div class="form-row">
-    <div class="col-md-12 col-sm-12">
-      <label class="label" for="validationCustom01">Primeiro nome:</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="Nome" required>
-      <div class="invalid-feedback">
-        Por favor, preencha o campo!
-      </div>
-    </div>
-    <div class="col-md-12 col-sm-12">
-      <label for="validationCustom02">Sobrenome:</label>
-      <input type="text" class="form-control" id="validationCustom02" placeholder="Sobrenome" required>
-      <div class="invalid-feedback">
-        Por favor, preencha o campo!
-      </div>
-    </div>
-    <div class="col-md-12 col-sm-12">
-      <label for="validationCustomUsername">E-mail:</label>
-      <div class="input-group">
-        <div class="input-group-prepend">
-        </div>
-        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Digite seu e-mail" aria-describedby="inputGroupPrepend" required>
-        <div class="invalid-feedback">
-          Por favor, preencha o campo!
-        </div>
-      </div>
-    </div>
-  </div>
   
-  <button class="btn btn-primary" type="submit">Enviar</button>
-</form>
+  <!--CAROUSEL-->
+  <section id="carousel">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="ratio ratio-21x9">
+            <img src="./images/daniel-romero-bR_r3fJu-vk-unsplash.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-caption">
+            <a href="#cadastro" class="btn btn-danger stretched-link"> Clique aqui para fazer o seu cadastro</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="ratio ratio-21x9">
+            <img src="./images/daniel-romero-PdfqLVSk-kg-unsplash.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="ratio ratio-21x9">
+            <img src="./images/daniel-romero-TpXoTb1uR5A-unsplash.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
 
-<script>
-// Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
-    var forms = document.getElementsByClassName('needs-validation');
-    // Faz um loop neles e evita o envio
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
-</script>
+<!--SOBRE-->
+<section id="sobre">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-7 col-sm-12">
+        <h2>Sobre Nós</h2>
+        <p>
+          Somos uma revendedora de celulares! Temos todos os tipos de smartphones que você pode pensar. Aqui você encontra o celular perfeito para todas as ocasiões, seja para o uso profissional, ou apenas no seu dia a dia. Você pode ter o celular certo, para a ocasião certa!
+        </p>
+        <p>Desde o último Iphone, até o mais recente Samsung ou Xiaomi, nós temos o celular certo para você! Trabalhamos com produtos originais, todos chegam lacrados para você em qualquer lugar do Brasil, com garantia de 12 meses! Conheça mais dos nossos produtos!</p>
+        <a class="btn btn-primary btn-lg" href="#produtos">Conheça nossos produtos!</a>
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <img src="./images/pexels-yan-krukov-7792749.jpg" alt="Homem falando ao celular" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--PRODUTOS-->
+<section id="produtos">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-2">
+        <h2>Produtos</h2>
+        <div class="card">
+          <img src="./images/pexels-thiago-japyassu-4071887.jpg" alt="Tecnologia" class="img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">Apple iPhone 13 Pro</h5>
+            <p class="card-text">Um celular completo, com uma ótima câmera e um design único.</p>
+            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/s21.jfif" alt="Tecnologia" class="img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy S21 Ultra</h5>
+            <p class="card-text">Celular ultra potente, com uma câmera poderosa e uma bateria para o dia todo.</p>
+            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Ver produto</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/pexels-zana-latif-4593994.jpg" alt="Tecnologia" class="img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">Xiaomi Redmi K40</h5>
+            <p class="card-text">Um celular robusto, completo para o seu dia a dia, com ele você pode fazer tudo.</p>
+            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--INFOS PRODUTOS-->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Apple iPhone 13 Pro
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> <div class="alert alert-primary" role="alert">
+            Tela Super Retina XDR com ProMotion, para uma experiência fluida e responsiva. Um upgrade dramático no sistema de câmera e no que você pode fazer com ele. Design com resistência fora de série. Chip A15 Bionic ultrarrápido. E duração de bateria ainda maior. É Pro e pronto.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          Samsung Galaxy S21 Ultra
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body"> 
+          <div class="alert alert-primary" role="alert">
+            Apresentando o Galaxy S21 Ultra 5G. Projetado com uma exclusiva câmera com corte de contorno para revolucionar a fotografia, permitindo que você grave vídeos cinematográficos em 8K e tire fotos épicas, tudo de uma só vez. Com o circuito mais rápido do Galaxy, o vidro mais forte, 5G e uma bateria que dura o dia todo, o Ultra faz jus ao seu nome com facilidade.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Xiaomi Redmi K40
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <div class="alert alert-primary" role="alert">
+            O Redmi K40 é um smartphone Android com características inovadoras que o tornam uma excelente opção para qualquer tipo de utilização, representando um dos melhores dispositivos móveis já feitos. A tela de 6.67 polegadas coloca esse Redmi no topo de sua categoria. A resolução também é alta: 2400x1080 pixel. As funcionalidades oferecidas pelo Redmi K40 são muitas e todas top de linha.
+          </div></div>
+        </div>
+      </div>
+    </div>
   </section>
-
-
-
-  <div class="modal fade" id="modal-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">          
-          <h5 class="modal-tile">Apple iPhone 13 Pro</h5>
-          <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  
+  <!--CADASTRO-->
+  <section id="cadastro">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <h2>Preencha o nosso formulário para se cadastrar e receber mais informações!</h2>
         </div>
-        <div class="modal-body">
-          <h6>Confira a capacidade de armazenamento e os preços!</h6>
-          <table class="table table-hover table-striped">
-            <thead>
-              <tr>
-              <th>Capacidade</th>
-              <th>Preço</th>
-          </tr>
-            </thead>
-            <tbody>
-          <tr>
-            <td>128gb</td>
-            <td>R$ 9.000,00</td>
-          </tr>
-          <tr>
-            <td>256gb</td>
-            <td>R$ 10.000,00</td>
-          </tr>
-          <tr>
-            <td>512gb</td>
-            <td>R$ 11.000,00</td>
-          </tr>
-            </tbody>
-          </table>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <h2>Cadastro</h2>
+              <p>Faça seu cadastro para receber nossos produtos em sua casa!</p>
+            </div>
+          </div>
+          <!--FORMULÁRIO-->
+          <form class="form">
+            <div class="form-row">
+              <div class="col">
+                <div class="input-group">
+                  <label for="nome">Nome Completo:</label>
+                  <input class="form-control" type="text" name="nome" placeholder="Digite seu nome" id="nome">
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <label for="email">E-mail:</label>
+                  <input class="form-control" type="text" name="email" placeholder="Digite seu e-mail" id="email">
+                </div>
+              </div> 
+            </div>
+            
+            <div class="row">
+              <div class="col">
+                <label for="endereco">Endereço Completo:</label>
+                <input type="text" class="form-control" placeholder="Digite seu Endereço Completo" id="endereco">
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col">
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidade" id="cidade" class="form-control">
+              </div>
+              <div class="col">
+                <label for="estado">Estado:</label>
+                <select name="estado" id="estado" class="form-control">
+                  <option value="">Selecione um estado</option>
+                  <option value="sp">SP</option>
+                  <option value="al">AL</option>
+                  <option value="mg">MG</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="cep">CEP:</label>
+                <input type="text" name="cep" id="cep" class="form-control">
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col">
+                <div class="input-group">
+                  <label for="info">Informações:</label>
+                  <textarea class="form-control" name="" rows="5" id="info"></textarea>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col">
+                <div class="form-check">
+                  <input type="checkbox" name="promocionais" id="promocioais">
+                  <label for="promocionais" class="form-check-label">Aceito mensagens promocionais</label>
+                </div>
+              </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-lg">Realizar cadastro</button>
+            
+          </form>
+          
+          <p><a href="#cadastro" data-bs-toggle="modal" data-bs-target="#modal-cadastro"> Clique aqui </a>e cadastre-se para receber novidades</p>
+          
+        </div>
+      </section>
+      
+      <!--MODAIS PRODUTOS-->
+      <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">          
+              <h5 class="modal-tile">Apple iPhone 13 Pro</h5>
+              <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h6>Confira a capacidade de armazenamento e os preços!</h6>
+              <table class="table table-hover table-striped">
+                <thead>
+                  <tr>
+                    <th>Capacidade</th>
+                    <th>Preço</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>128gb</td>
+                    <td>R$ 9.000,00</td>
+                  </tr>
+                  <tr>
+                    <td>256gb</td>
+                    <td>R$ 10.000,00</td>
+                  </tr>
+                  <tr>
+                    <td>512gb</td>
+                    <td>R$ 11.000,00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+          </div>
         </div>
       </div>
-    
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      
+      <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">          
+              <h5 class="modal-tile">Samsung Galaxy S21 Ultra</h5>
+              <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h6>Confira a capacidade de armazenamento e os preços!</h6>
+              <table class="table table-hover table-striped">
+                <thead>
+                  <tr>
+                    <th>Capacidade</th>
+                    <th>Preço</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>128gb</td>
+                    <td>R$ 9.000,00</td>
+                  </tr>
+                  <tr>
+                    <td>256gb</td>
+                    <td>R$ 10.000,00</td>
+                  </tr>
+                  <tr>
+                    <td>512gb</td>
+                    <td>R$ 11.000,00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">          
+              <h5 class="modal-tile">Xiaomi Redmi K40</h5>
+              <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h6>Confira o tamanho e os preços!</h6>
+              <table class="table table-hover table-striped">
+                <thead>
+                  <tr>
+                    <th>Capacidade</th>
+                    <th>Preço</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>128gb</td>
+                    <td>R$ 9.000,00</td>
+                  </tr>
+                  <tr>
+                    <td>256gb</td>
+                    <td>R$ 10.000,00</td>
+                  </tr>
+                  <tr>
+                    <td>512gb</td>
+                    <td>R$ 11.000,00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+      
+      <!--MODAL CADASTRO-->
+      <div class="modal fade" id="modal-cadastro">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">          
+              <h5 class="modal-tile">Inscrever-me na lista</h5>
+              <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h6>Preencha os campos para receber novidades e promoções</h6>
+              <form class="form-inline">
+                <div class="form-group">
+                  <input type="text" class="form-control mb-2" name="nome" placeholder="Nome">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control mb-2" name="email" placeholder="E-mail" required>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary">Receber novidades</button>
+                </div>
+              </form>
+            </div>
+            
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="modal fade" id="modal-2">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">          
-          <h5 class="modal-tile">Samsung Galaxy S21 Ultra</h5>
-          <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <h6>Confira a capacidade de armazenamento e os preços!</h6>
-          <table class="table table-hover table-striped">
-            <thead>
-              <tr>
-              <th>Capacidade</th>
-              <th>Preço</th>
-          </tr>
-            </thead>
-            <tbody>
-          <tr>
-            <td>128gb</td>
-            <td>R$ 9.000,00</td>
-          </tr>
-          <tr>
-            <td>256gb</td>
-            <td>R$ 10.000,00</td>
-          </tr>
-          <tr>
-            <td>512gb</td>
-            <td>R$ 11.000,00</td>
-          </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
     
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modal-3">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">          
-          <h5 class="modal-tile">Xiaomi Redmi K40</h5>
-          <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <h6>Confira o tamanho e os preços!</h6>
-          <table class="table table-hover table-striped">
-            <thead>
-              <tr>
-              <th>Capacidade</th>
-              <th>Preço</th>
-          </tr>
-            </thead>
-            <tbody>
-          <tr>
-            <td>128gb</td>
-            <td>R$ 9.000,00</td>
-          </tr>
-          <tr>
-            <td>256gb</td>
-            <td>R$ 10.000,00</td>
-          </tr>
-          <tr>
-            <td>512gb</td>
-            <td>R$ 11.000,00</td>
-          </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-
-
     <!--BOOTSTRAP BUNDLE-->
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--JAVA SCRIPT CAROUSEL-->
+    <script>
+      var myCarousel = document.querySelector('#carouselExampleFade')
+      var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 5000
+      })
+    </script>
   </body>
-</html>
+  </html>
