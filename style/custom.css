@@ -26,7 +26,8 @@ header {
   margin-left: -0.2rem;
 }
 
-input {
+input,
+select {
   margin-bottom: 1rem;
 }
 
@@ -59,7 +60,11 @@ form button {
   #sobre h2 {
     margin-top: 1rem;
   }
-  
+
+  .carousel-caption {
+    height: -50px;
+  }
+
   #sobre img {
     margin-top: 2rem;
   }

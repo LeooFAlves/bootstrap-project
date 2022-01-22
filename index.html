@@ -51,17 +51,23 @@
             <img src="./images/daniel-romero-bR_r3fJu-vk-unsplash.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-caption">
-            <a href="#cadastro" class="btn btn-danger stretched-link"> Clique aqui para fazer o seu cadastro</a>
+            <a href="#cadastro" class="btn btn-light stretched-link"> Clique aqui para fazer o seu cadastro</a>
           </div>
         </div>
         <div class="carousel-item">
           <div class="ratio ratio-21x9">
             <img src="./images/daniel-romero-PdfqLVSk-kg-unsplash.jpg" class="d-block w-100" alt="...">
           </div>
+          <div class="carousel-caption">
+            <a href="#cadastro" class="btn btn-light stretched-link"> Clique aqui para fazer o seu cadastro</a>
+          </div>
         </div>
         <div class="carousel-item">
           <div class="ratio ratio-21x9">
             <img src="./images/daniel-romero-TpXoTb1uR5A-unsplash.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-caption">
+            <a href="#cadastro" class="btn btn-light stretched-link"> Clique aqui para fazer o seu cadastro</a>
           </div>
         </div>
       </div>
@@ -189,69 +195,94 @@
             </div>
           </div>
           <!--FORMULÁRIO-->
-          <form class="form">
-            <div class="form-row">
-              <div class="col">
-                <div class="input-group">
-                  <label for="nome">Nome Completo:</label>
-                  <input class="form-control" type="text" name="nome" placeholder="Digite seu nome" id="nome">
-                </div>
-              </div>
-              <div class="col">
-                <div class="input-group">
-                  <label for="email">E-mail:</label>
-                  <input class="form-control" type="text" name="email" placeholder="Digite seu e-mail" id="email">
-                </div>
-              </div> 
+          <form class="form row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+              <label for="validationCustom01" class="form-label">Nome:</label>
+              <input type="text" name="nome" class="form-control" id="validationCustom01" placeholder="Digite seu nome" required>
+              <div class="invalid-feedback">Por favor, preencha o campo ou confira as informações!</div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom01" class="form-label">Sobrenome:</label>
+              <input type="text" name="sobrenome" class="form-control" id="validationCustom01" placeholder="Digite seu sobrenome" required>
+              <div class="invalid-feedback">Por favor, preencha o campo ou confira as informações!</div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom02" class="form-label">E-mail:</label>
+              <input type="text" name="email" class="form-control" id="validationCustom01" placeholder="e-mail@e-mail.com.br" required>
+              <div class="invalid-feedback">Por favor, preencha o campo ou confira as informações!</div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom01" class="form-label">Telefone:</label>
+              <input type="text" name="telefone" class="form-control" id="validationCustom01" placeholder="(99) 99999-9999" required>
+              <div class="invalid-feedback">Por favor, preencha o campo ou confira as informações!</div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Endereço:</label>
+              <input type="text" name="endereço" class="form-control" id="validationCustom01" placeholder="Digite seu endereço" required>
+              <div class="invalid-feedback">Por favor, preencha o campo ou confira as informações!</div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Complemento:</label>
+              <input type="text" name="complemento" class="form-control" id="validationCustom01" placeholder="Apartamento">
+              <div class="invalid-feedback">Por favor, preencha o campo ou confira as informações!</div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Bairro:</label>
+              <input type="text" name="bairro" class="form-control" id="validationCustom01" placeholder="Digite o bairro" required>
+              <div class="invalid-feedback">Por favor, preencha o campo ou confira as informações!</div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Cidade:</label>
+              <input type="text" name="cidade" class="form-control" id="validationCustom01" placeholder="Digite a cidade" required>
+              <div class="invalid-feedback">Por favor, preencha o campo ou confira as informações!</div>
+            </div>
+            <div class="col-md-4">
+              <label for="estado">Estado:</label>
+              <select name="estado" id="estado" class="form-control" required>
+                <option value="">Selecione um estado</option>
+                <option value="ac">AC</option>
+                <option value="al">AL</option>
+                <option value="ap">AP</option>
+                <option value="am">AM</option>
+                <option value="ba">BA</option>
+                <option value="ce">CE</option>
+                <option value="es">ES</option>
+                <option value="go">GO</option>
+                <option value="ma">MA</option>
+                <option value="mt">MT</option>
+                <option value="ms">MS</option>
+                <option value="mg">MG</option>
+                <option value="pa">PA</option>
+                <option value="pb">PB</option>
+                <option value="pr">PR</option>
+                <option value="pe">PE</option>
+                <option value="pi">PI</option>
+                <option value="rj">RJ</option>
+                <option value="rn">RN</option>
+                <option value="rs">RS</option>
+                <option value="ro">RO</option>
+                <option value="rr">RR</option>
+                <option value="sc">SC</option>
+                <option value="sp">SP</option>
+                <option value="se">SE</option>
+                <option value="to">TO</option>
+                <option value="df">DF</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">CEP:</label>
+              <input type="text" name="cep" class="form-control" id="validationCustom01" placeholder="00000-000" required>
+              <div class="invalid-feedback">Por favor, preencha o campo ou confira as informações!</div>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustom01" class="form-label">Informações:</label>
+              <textarea type="text" name="" class="form-control" rows = "5" id="validationCustom01" placeholder="Informações"></textarea>
+              <div class="invalid-feedback">Por favor, preencha o campo ou confira as informações!</div>
             </div>
             
-            <div class="row">
-              <div class="col">
-                <label for="endereco">Endereço Completo:</label>
-                <input type="text" class="form-control" placeholder="Digite seu Endereço Completo" id="endereco">
-              </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
             </div>
-            
-            <div class="row">
-              <div class="col">
-                <label for="cidade">Cidade:</label>
-                <input type="text" name="cidade" id="cidade" class="form-control">
-              </div>
-              <div class="col">
-                <label for="estado">Estado:</label>
-                <select name="estado" id="estado" class="form-control">
-                  <option value="">Selecione um estado</option>
-                  <option value="sp">SP</option>
-                  <option value="al">AL</option>
-                  <option value="mg">MG</option>
-                </select>
-              </div>
-              <div class="col">
-                <label for="cep">CEP:</label>
-                <input type="text" name="cep" id="cep" class="form-control">
-              </div>
-            </div>
-            
-            <div class="row">
-              <div class="col">
-                <div class="input-group">
-                  <label for="info">Informações:</label>
-                  <textarea class="form-control" name="" rows="5" id="info"></textarea>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row">
-              <div class="col">
-                <div class="form-check">
-                  <input type="checkbox" name="promocionais" id="promocioais">
-                  <label for="promocionais" class="form-check-label">Aceito mensagens promocionais</label>
-                </div>
-              </div>
-            </div>
-            
-            <button type="submit" class="btn btn-primary btn-lg">Realizar cadastro</button>
-            
           </form>
           
           <p><a href="#cadastro" data-bs-toggle="modal" data-bs-target="#modal-cadastro"> Clique aqui </a>e cadastre-se para receber novidades</p>
@@ -417,12 +448,36 @@
     
     <!--BOOTSTRAP BUNDLE-->
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--ICONS FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/c0eafbdc68.js" crossorigin="anonymous"></script>
     <!--JAVA SCRIPT CAROUSEL-->
     <script>
       var myCarousel = document.querySelector('#carouselExampleFade')
       var carousel = new bootstrap.Carousel(myCarousel, {
         interval: 5000
       })
+    </script>
+    <!--VALIDAÇÃO FORMULÁRIO-->
+    <script>
+      (function () {
+        'use strict'
+        
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+        
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+            
+            form.classList.add('was-validated')
+          }, true)
+        })
+      })()
     </script>
   </body>
   </html>
